@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h4>PLANNER</h4>
+    <img src="images/planner.png.webp" alt="Planner Image" class="planner-img">
+    <p class="subtitle">FOR YOUR DAILY NEEDS</p>
+    <!--TAKS SECTION-->
+    <section id="tasks">
+        <h3>MY TASKS</h3>
+        <ol>
+            <li>MAKE A LIST OF THE TASKS</li>
+            <li>DO THE PENDING TASKS ALSO</li>
+            <li>TAKE BREAKS IN BETWEEN</li>
+        </ol>
+    </section>
+    <section id="tasks1">
+        <h2>A place to write your tasks</h2>
+        <label for="taskinput">New Task</label>
+        <input type="text" id="taskinput" placeholder="ENTER THE TASK">
+        <button onclick="addtask()">Add Task</button>
+        <button onclick="removetasks1()">Remove Tasks</button>
+        <p>TASKS TO BE DONE ARE <span id="taskcount">0</span></p>
+        <ol id="tasklist">
+
+        </ol>
+
+    </section>
+
+    <section id="tasks2">
+        <h2>Remaining Tasks</h2>
+        <input type="text" id="input" placeholder="ENTER THE TASK">
+        <button onclick="addtasks()">Add Tasks</button>
+        <button onclick="removetasks2()">Remove Tasks</button>
+        <p> TASKS TO BE DONE ARE <span id="remainingtasks">0</span></p>
+        <ol id="tasklist1">
+
+        </ol>
+    </section>
+
+    <section id="breakquotes" style="display:none;">
+        <p id="quote1">"Take a deep breath and relax!"</p>
+    <p id="quote2">"Stretch your arms and refresh your mind."</p>
+    <p id="quote3">"A short break boosts productivity!"</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
